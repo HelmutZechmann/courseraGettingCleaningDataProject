@@ -45,7 +45,7 @@ The original sensor data was recored at a rate of 50 Hz. The data was grouped in
 
 In total, each input record contains 651 features.
 
-### Input Data Units [InputDataUnits] ##
+### Input Data Units
 
 The accelerometer data is measured in standard gravity units 'g'. The gyroscope data is measured in radians/second.
 
@@ -156,7 +156,7 @@ The source variables consist of the following parts:
 ### Variable Units
 
 * Columns 1 and 2 are identifieres without unit.
-* The remaining columns have the same units as their input data. Due to the normalization they do not have units attached see [Input Data Units][InputDataUnits]
+* The remaining columns have the same units as their input data. Due to the normalization they do not have units attached see [Input Data Units][#input-data-units]
 
 
 ### Additional notes
