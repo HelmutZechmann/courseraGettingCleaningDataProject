@@ -156,7 +156,7 @@ The source variables consist of the following parts:
 ### Variable Units
 
 * Columns 1 and 2 are identifieres without unit.
-* The remaining columns have the same units as their input data. Due to the normalization they do not have units attached see [Input Data Units][#input-data-units]
+* The remaining columns have the same units as their input data. Due to the normalization they do not have units attached see [Input Data Units](#input-data-units)
 
 
 ### Additional notes
