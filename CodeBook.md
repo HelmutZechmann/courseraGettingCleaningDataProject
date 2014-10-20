@@ -2,7 +2,7 @@
 
 This document describes the variables of the output data set and summaries used to calculate the values, along with units and any other relevant information.
 
-The [first section][#input-data] summarizes relevant parts from the input data code book. The [next section][#output-variables] describes the output variables with their units. The [last section][#transformations] describes the tranformations used to calculate the output values.
+The [first section](#input-data) summarizes relevant parts from the input data code book. The [next section](#output-variables) describes the output variables with their units. The [last section](#transformations) describes the tranformations used to calculate the output values.
 
 ## Input Data
 
