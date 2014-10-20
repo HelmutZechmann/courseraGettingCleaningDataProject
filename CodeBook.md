@@ -147,7 +147,7 @@ The following table shows a table with all variables in the output file. The fir
 
 The source variables consist of the following parts:
 
-* the first letter defined the domain: t for time or f for frequency
+* the first letter defines the domain: t for time or f for frequency
 * the next part defines the source variable: BodyAcc (BodyAcceleration), GravityAcc (GravityAcceleration) or BodyGyro (BodyGyroscope)
 * the next (optional) part describes the method that was used to derive the variable: Mag (Magnitued), Jerk or JerkMag (JerkMagnitude)
 * the part after the dash describes the function that was used to compute the feature mean (Mean) or std (Standarddeviation)
