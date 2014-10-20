@@ -72,7 +72,7 @@ The following table shows a table with all variables in the output file. The fir
 
 | Colmun |                         Variable                        |       source variable        |
 | ------ | :------------------------------------------------------ | :--------------------------- |
-|      1 | subjectid                                               | subject id subject file      |
+|      1 | subjectid                                               | subject id from subject file |
 |      2 | activityname                                            | activity id from labels file |
 |      3 | timeBodyAccelerationMeanX                               | tBodyAcc-mean()-X            |
 |      4 | timeBodyAccelerationMeanY                               | tBodyAcc-mean()-Y            |
