@@ -22,7 +22,7 @@ The script assumes that the extracted dataset can be found in the current workin
 
 The file "tidy_data.txt" can be read into a data.frame using
 
-```
+```R
 read.table("tidy_data.txt", header = T)
 ```
 
