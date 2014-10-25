@@ -20,7 +20,7 @@ The script requires the package dplyr.
 
 The script assumes that the extracted dataset can be found in the current working directory, i.e. the current working directory contains the folder ```UCI HAR Dataset```. 
 
-To run the script ```run_analysis.R```
+To run the script ```run_analysis.R```:
 
 1. put it into the parent folder of ```UCI HAR Dataset```
 2. launch an R session and change into that directory using the ```setwd``` command
@@ -78,7 +78,7 @@ The transformation script outputs data to a tidy data text file that meets the p
 I put all features in one row since i think all features belong to one observation.
 
 
-### The codebook. 
+## The codebook. 
 
 The codebook is contained in the file CodeBook.md. It describes the variables of the output data set and summaries used to calculate the values, along with units and any other relevant information.
 
