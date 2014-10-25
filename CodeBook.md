@@ -2,13 +2,13 @@
 
 This document describes the variables of the output data set and summaries used to calculate the values, along with units and any other relevant information.
 
-The [first section](#input-data) summarizes relevant parts from the input data code book. The [next section](#output-variables) describes the output variables with their units. The [last section](#transformations) describes the tranformations used to calculate the output values.
+The [first section](#input-data) summarizes relevant parts from the input data codebook. The [next section](#output-variables) describes the output variables with their units. The [last section](#transformations) describes the transformations used to calculate the output values.
 
 ## Input Data
 
-The original data set contains a codebook which describes the data set. In this section I repeat the parts of the codebook relevant to the generated data set.
+The original data set contains a codebook that describes the data set. In this section I repeat the parts of the codebook relevant to the generated data set.
 
-The input data contains data recorded from the accelerometer and the gyroscope of a smartphone while the person who carried the smartpone was performing one of the following six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+The input data contains data recorded from the accelerometer and the gyroscope of a smartphone while the person who carried the smartphone was performing one of the following six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
 ### Input Data Variables
 
@@ -34,9 +34,9 @@ From the raw measurements, several other values were derived. The input dataset 
 | fBodyGyroMag      | gyroscope     | frequency |
 | fBodyGyroJerkMag  | gyroscope     | frequency |
 
-The table above also shows the source for each variable and the domain it belongs to. Variable names ending with XYZ denote 3-axial variables, the dataset contains one separate variable for each axis.
+The table above also shows the source for each variable and the domain it belongs to. Variable names ending with XYZ denote 3-axial variables. The dataset contains one separate variable for each axis.
 
-The original sensor data was recored at a rate of 50 Hz. The data was grouped into fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). Several functions where applied to these windows to compute the input features. The functions include: 
+The original sensor data was recorded at a rate of 50 Hz. The data was grouped into fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). Several functions where applied to these windows to compute the input features. The functions include: 
 
 * mean(): Mean value
 * std(): Standard deviation
@@ -49,14 +49,14 @@ In total, each input record contains 651 features.
 
 The accelerometer data is measured in standard gravity units 'g'. The gyroscope data is measured in radians/second.
 
-The input features are normalized and bounded within the interval [-1,1]. During normalization, the units have been divided by themselves, so units have been cancelled.
+The input features are normalized and bounded within the interval [-1,1]. During normalization the units have been divided by themselves so units have been cancelled.
 
 ### Structure of the input data
 
 The input data is split into two subsets: a training set and a test set. Each subsets consists of three files:
 
 * A features file (train/X_train.txt and test/X_test.txt) with one feature vector per row
-* A label with with one activity label per row (train/y_train.txt and test/y_test.txt)
+* A label with one activity label per row (train/y_train.txt and test/y_test.txt)
 * A file with a subject id per row (train/subject_train.txt and test/subject_test.txt)
 
 The names of the features are listed in the file features.txt.
@@ -147,16 +147,23 @@ The following table shows a table with all variables in the output file. The fir
 
 The source variables consist of the following parts:
 
-* the first letter defines the domain: t for time or f for frequency
-* the next part defines the source variable: BodyAcc (BodyAcceleration), GravityAcc (GravityAcceleration) or BodyGyro (BodyGyroscope)
-* the next (optional) part describes the method that was used to derive the variable: Mag (Magnitued), Jerk or JerkMag (JerkMagnitude)
-* the part after the dash describes the function that was used to compute the feature mean (Mean) or std (Standarddeviation)
+* The first letter defines the domain: t for time or f for frequency
+* The next part defines the source variable: BodyAcc (BodyAcceleration), GravityAcc (GravityAcceleration) or BodyGyro (BodyGyroscope)
+* The next (optional) part describes the method that was used to derive the variable: Mag (Magnitued), Jerk or JerkMag (JerkMagnitude)
+* The part after the dash describes the function that was used to compute the feature mean (Mean) or std (Standarddeviation)
 * In case of three axial measurements, the last part of the variable defines the axis (X, Y or Z)
 
 ### Variable Units
 
-* Columns 1 and 2 are identifieres without unit.
-* The remaining columns have the same units as their input data. Due to the normalization they do not have units attached see [Input Data Units](#input-data-units)
+* subjectid: identifier of an observed volunteer within an age bracket of 19-48 years
+    * Data type: Numeric
+    * Value range: 1 - 30
+* activityname: Label string of the observed activity a person was performing
+    * Data type: factor
+    * Labels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* Rows 3 - 68: Means of selected features per subjectid and activityname
+    * Data type: The feature means have the same units as their input data. Due to the normalization they do not have units attached see [Input Data Units](#input-data-units)
+    * Value range: [-1, 1]
 
 
 ### Additional notes
