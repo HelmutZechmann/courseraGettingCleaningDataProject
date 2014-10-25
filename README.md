@@ -18,7 +18,15 @@ You should create one R script called run_analysis.R that does the following:
 
 The script requires the package dplyr.
 
-The script assumes that the extracted dataset can be found in the current working directory, i.e. the current working directory contains the folder ```UCI HAR Dataset```. The script will read the test and training data from the folder ```UCI HAR Dataset```, apply the transformations listed above and write the result to the file "tidy_data.txt" in the current working directory.
+The script assumes that the extracted dataset can be found in the current working directory, i.e. the current working directory contains the folder ```UCI HAR Dataset```. 
+
+To run the script ```run_analysis.R```
+
+1. put it into the parent folder of ```UCI HAR Dataset```
+2. launch an R session and change into that directory using the ```setwd``` command
+3. type ```source("run_analysis.R")``` to execute the script
+
+The script will read the test and training data from the folder ```UCI HAR Dataset```, apply the transformations listed above and write the result to the file "tidy_data.txt" in the current working directory.
 
 The file "tidy_data.txt" can be read into a data.frame using
 
