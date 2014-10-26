@@ -75,8 +75,8 @@ The transformation script outputs data to a tidy data text file that meets the p
 * Each observation forms a row.
 * Each type of observational unit forms a table
 
-I put all features in one row since i think all features belong to one observation.
-
+In the course forums there has been a lot of discussion about the correct tidy data format (e.g. on https://class.coursera.org/getdata-008/forum/thread?thread_id=94). One possibility is to list one mean value per subject id and activity in one row. The second option is to put all mean values for one subject id / activity combination into one row. 
+I decided on the second option since in my opinon all mean values for one subject id, acitivity pair belong to one observation.
 
 ## The codebook. 
 
